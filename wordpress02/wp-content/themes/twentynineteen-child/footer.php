@@ -18,3 +18,6 @@
     </div>
     <p>@keita.igarashi Inc</p>
 </footer>
+<script type="text/javascript" src="script.js"></script>
+
+</body>

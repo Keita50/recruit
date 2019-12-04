@@ -21,19 +21,21 @@ get_header();
     <section class="top">
         <div class="table-cell">
             <h2>Dummy</h2>
-            <i class="fas fa-times" red></i>
+            <i class="fas fa-times" center></i>
             <h2>Dummy</h2>
-            <i class="fas fa-times" red></i>
+            <i class="fas fa-times" center></i>
             <h2>Dummy</h2>
             <h3>データに魂を。</h3>        
         </div>
     </section>
-    <section>
+    <section class="recruit">
         <h2>RECRUIT</h2>
+        <h3>採用情報</h3>
     </section>
-    <section>
+    <section class="message">
+    <img src="./wp-content/themes/twentynineteen-child/img/book01.jpeg" alt="">
+
         <div class="text-container">
-        <img src="img/book01.jpeg" alt="">
             <b>messege</b>
             <h3>この文章はダミーです。</h3>
             <p>つれづれなるまゝに、日暮らし、硯にむかひて、</br>
@@ -46,11 +48,14 @@ get_header();
         </div>
     </section>
     <section>
-    <h2><span>Information</span><span>お知らせ</span></h2>
-    <ul>
-        <li>
-        </li>
-    </ul>
+        <div class="news-archive">
+            <div class="new-archive-span">
+                <h2><span>Information</span></h2>
+                <p>お知らせ</p>
+            </div>
+            <div class="information"></div>
+
+        </div>
     </section>
     <section>
         <div class="section-inner">
@@ -61,23 +66,20 @@ get_header();
         <a href="">Wiew All</a>
         </div>
     </section>
-    <section>
-    <div class="section-inner">
+    <section class="cross">
     <div class="crosstalk">
-        <h3></h3>
+        <h3>Cross Talk</h3>
         <div class="swiper-wrapper">
 
         </div>
     </div>
-    </div>
     </section>
-    <section>
-        <h2>Project</h2>
-        <h3>プロジェクト</h3>
+    <section class="project">
+        <h3>Project</h3>
+        <p>プロジェクト</p>
         <div class="swiper-wrapper">
         </div>
     </section>
-</body>
 <?php
 get_footer();
 ?>

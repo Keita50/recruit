@@ -18,29 +18,30 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link href="./wp-content/themes/twentynineteen-child/css/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="./wp-content/themes/twentynineteen-child/css/slick.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>  
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
-
     <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-<link rel="stylesheet" href="css/style.css">
 
-		<header>            
-        <link rel="stylesheet" href="css/style.css">
+		<header class="clearfix">            
 
-                <a href=""><i class="fab fa-fedex my" ></i></a>
+                <a class="logo" href=""><i class="fab fa-fedex my" ></i></a>
                 <nav>
                 <ul class="dropdwn">
                     <li>
                     <span>PHILOSOPHY
                     <i class="fas fa-check"></i>
-                    </span></br>
+                    </span><br>
                     <span>ミッション・ビジョン</span>
                     <ul class="secondary_nav">
                       <li>
@@ -57,28 +58,62 @@
                     <li>
                     <span>ABOUT
                     <i class="fas fa-check"></i>
-                    </span></br>
+                    </span><br>
                     <span>ブレインパッドについて</span>
+                    <ul class="secondary_nav">
+                      <li>
+                        <a href="#">子ナビ1</a>
+                      </li>
+                      <li>
+                        <a href="#">子ナビ1</a>
+                      </li>
+                      <li>
+                        <a href="#">子ナビ1</a>
+                      </li>
+                    </ul>
+
                     </li>
                     <li>
                     <span>MEMBER
-                    <i class="fas fa-check"></i>
-                    </span></br>
+                    </span><br>
                     <span>社員インタビュー</span>
 
                     </li>
                     <li>
                     <span>PROJECT
                     <i class="fas fa-check"></i>
-                    </span></br>
+                    </span><br>
                     <span>プロジェクト</span>
+                    <ul class="secondary_nav">
+                      <li>
+                        <a href="#">子ナビ1</a>
+                      </li>
+                      <li>
+                        <a href="#">子ナビ1</a>
+                      </li>
+                      <li>
+                        <a href="#">子ナビ1</a>
+                      </li>
+                    </ul>
 
                     </li>
                     <li>
                     <span>CROSS TALK
                     <i class="fas fa-check"></i>
-                    </span></br>
+                    </span><br>
                     <span>クロストーク</span>
+                    <ul class="secondary_nav">
+                      <li>
+                        <a href="#">子ナビ1</a>
+                      </li>
+                      <li>
+                        <a href="#">子ナビ1</a>
+                      </li>
+                      <li>
+                        <a href="#">子ナビ1</a>
+                      </li>
+                    </ul>
+
                     </li>
 
                 </ul>

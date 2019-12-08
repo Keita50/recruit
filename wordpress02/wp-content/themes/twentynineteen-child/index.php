@@ -31,6 +31,9 @@ get_header();
     <section class="recruit">
         <h2>RECRUIT</h2>
         <h3>採用情報</h3>
+        <div class="re-image0">
+        <?php echo get_recruit(); ?>
+        </div>
     </section>
     <section class="message">
     <img src="./wp-content/themes/twentynineteen-child/img/book01.jpeg" alt="">
@@ -53,14 +56,23 @@ get_header();
                 <h2><span>Information</span></h2>
                 <p>お知らせ</p>
             </div>
-            <div class="information"></div>
 
+            <?php echo get_works(); ?>
         </div>
     </section>
     <section>
-        <div class="section-inner">
+        <div class="section-inner clearfix">
             <h2>Menber</h2>
             <h3>社員インタビュー</h3>
+        </div>
+        <div class="member">
+            <ul class="slider">
+                <li><a href="#"><img src="./wp-content/themes/twentynineteen-child/img/img01.png" alt="image01"></a></li>
+                <li><a href="#"><img src="./wp-content/themes/twentynineteen-child/img/img02.png" alt="image02"></a></li>
+                <li><a href="#"><img src="./wp-content/themes/twentynineteen-child/img/img03.png" alt="image03"></a></li>
+                <li><a href="#"><img src="./wp-content/themes/twentynineteen-child/img/img04.png" alt="image04"></a></li>
+            </ul>
+        <?php echo get_member(); ?>
         </div>
         <div class="viewall">
         <a href="">Wiew All</a>
@@ -69,15 +81,17 @@ get_header();
     <section class="cross">
     <div class="crosstalk">
         <h3>Cross Talk</h3>
-        <div class="swiper-wrapper">
-
+        <div class="re-image">
+        <?php echo get_crosstalk(); ?>
         </div>
     </div>
     </section>
     <section class="project">
         <h3>Project</h3>
         <p>プロジェクト</p>
-        <div class="swiper-wrapper">
+        <div class="re-image">
+        <?php echo get_project(); ?>
+
         </div>
     </section>
 <?php

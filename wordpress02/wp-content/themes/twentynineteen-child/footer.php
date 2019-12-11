@@ -30,7 +30,6 @@
     </div>
     <p>@keita.igarashi Inc</p>
 </footer>
-<script type="text/javascript" src="./wp-content/themes/twentynineteen-child/script.js"></script>
-<script type="text/javascript" src="js/slider.js"></script>
-
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/script.js"></script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/slider.js"></script>
 </body>

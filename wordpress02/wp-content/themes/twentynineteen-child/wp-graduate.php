@@ -8,7 +8,10 @@ get_header();
 
 <body>
     <section>
-
+        <div>
+            <h2>New Graduate</h2>
+            <p>新卒採用</p>
+        </div>
     </section>    
 
     <section>
@@ -16,7 +19,8 @@ get_header();
     </section>
 
     <section>
-
+        <h3>Internship</h3>
+        <p>インターンシップ情報</p>
     </section>
 
 </body>

@@ -81,6 +81,7 @@ header{
 	background-color: rgba(255,255,255,0.9);
 	position: fixed;
 	width:100%;
+	z-index: 2;
 
 }
 
@@ -97,7 +98,7 @@ header a{
 nav{
     display: inline-block;
 	text-align: center;
-	margin-left: 400px;
+	margin-left: 800px;
 
 }
 
@@ -105,7 +106,6 @@ header ul{
     list-style: none;
 	display: inline-block;
 	text-align: center;
-
 }
 
 header li{
@@ -236,7 +236,7 @@ li a:hover{
 	font-size: 70px;
     width: 50px;
     line-height: 100px;
-    margin-left: 930px;
+    margin-left: 1400px;
 }
 
 .recruit{
@@ -266,6 +266,14 @@ li a:hover{
 	display: inline-block;
 	margin-left: 70px;
 	position: relative;
+	z-index: 1;
+}
+
+.re-image p{
+}
+
+.re-image0 img{
+	z-index: 1;
 }
 
 .re-image0 h3{
@@ -409,7 +417,7 @@ li a:hover{
 }
 
 .re-image>p{
-	display: flex;
+	display: inline-block;
 }
 
 footer{

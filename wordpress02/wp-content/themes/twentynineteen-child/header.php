@@ -17,15 +17,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <link href="./wp-content/themes/twentynineteen-child/css/slick-theme.css" rel="stylesheet" type="text/css">
-    <link href="./wp-content/themes/twentynineteen-child/css/slick.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/slick-theme.css" ); ?> rel="stylesheet" type="text/css">
+    <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/slick.css" ?> rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>  
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+    <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/slick.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <script type="text/javascript" src="script.js"></script>
+   
     <?php wp_head(); ?>
 </head>
 
@@ -132,5 +130,5 @@
 
             </div>
         </div>
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/script.js"></script>
 		</header><!-- #masthead -->

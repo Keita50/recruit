@@ -67,10 +67,10 @@ get_header();
         </div>
         <div class="member">
             <ul class="slider">
-                <li><a href="#"><img src="./wp-content/themes/twentynineteen-child/img/img01.png" alt="image01"></a></li>
-                <li><a href="#"><img src="./wp-content/themes/twentynineteen-child/img/img02.png" alt="image02"></a></li>
-                <li><a href="#"><img src="./wp-content/themes/twentynineteen-child/img/img03.png" alt="image03"></a></li>
-                <li><a href="#"><img src="./wp-content/themes/twentynineteen-child/img/img04.png" alt="image04"></a></li>
+                <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/img01.png" alt="image01"></a></li>
+                <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/img02.png" alt="image02"></a></li>
+                <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/img03.png" alt="image03"></a></li>
+                <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/img04.png" alt="image04"></a></li>
             </ul>
         <?php echo get_member(); ?>
         </div>

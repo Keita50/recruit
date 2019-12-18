@@ -17,8 +17,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
     <meta charset="utf-8">
-    <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/slick-theme.css" ); ?> rel="stylesheet" type="text/css">
-    <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/slick.css" ?> rel="stylesheet" type="text/css">
+    <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/slick.css" rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>  
     <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/slick.min.js"></script>
@@ -43,7 +43,7 @@
                     <span>ミッション・ビジョン</span>
                     <ul class="secondary_nav">
                       <li>
-                        <a href="#">子ナビ1</a>
+                        <a href="<?php echo get_stylesheet_directory_uri(); ?>/philosophy">PHYLOSOPHY</a>
                       </li>
                       <li>
                         <a href="#">子ナビ1</a>
@@ -65,16 +65,16 @@
                       <li>
                         <a href="#">子ナビ1</a>
                       </li>
-                      <li>
-                        <a href="#">子ナビ1</a>
-                      </li>
                     </ul>
 
                     </li>
                     <li>
-                    <span>MEMBER
-                    </span><br>
-                    <span>社員インタビュー</span>
+                      <a href="<?php echo get_stylesheet_directory_uri(); ?>/member">
+                      <span>MEMBER
+                      </span><br>
+                       <span>社員インタビュー</span>
+
+                      </a>
 
                     </li>
                     <li>
@@ -83,9 +83,6 @@
                     </span><br>
                     <span>プロジェクト</span>
                     <ul class="secondary_nav">
-                      <li>
-                        <a href="#">子ナビ1</a>
-                      </li>
                       <li>
                         <a href="#">子ナビ1</a>
                       </li>
@@ -118,14 +115,14 @@
             </nav>
         <div class="recruit-site">
             <div class="a">
-            <a href="">GRADUATE
-            </br>
+            <a href="<?php echo get_stylesheet_directory_uri(); ?>/graduate">GRADUATE
+            <br>
             新卒採用
             </a>
 
             </div>
             <div class="b">
-            <a href="">CAREER</br>
+            <a href="<?php echo get_stylesheet_directory_uri(); ?>/carrer">CAREER<br>
             中途採用</a>
 
             </div>

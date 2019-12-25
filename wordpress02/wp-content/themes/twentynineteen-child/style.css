@@ -155,17 +155,10 @@ header li{
 }
 
 
-
-
 li a:hover{
     background: #b3d7ff;
     color: rgb(65, 65, 65);
 }
-
-
-
-
-
 
 
 .top{
@@ -264,12 +257,9 @@ li a:hover{
 	height: 300px;
 	padding: 10px 20px;
 	display: inline-block;
-	margin-left: 70px;
+	margin-left: 35px;
 	position: relative;
 	z-index: 1;
-}
-
-.re-image p{
 }
 
 .re-image0 img{
@@ -289,6 +279,18 @@ li a:hover{
 	padding: 10px 20px;
 	display: inline-block;
 	margin-left: 70px;
+	position: relative;
+	z-index: 1;
+}
+
+.re-image::before{
+		content: "";
+		position: absolute;
+		top: 0; bottom: 0; left: 0; right: 0;
+		z-index: -1;
+		background-color:#f1f1f1;
+		transform: skewY(-10deg);
+	
 }
 
 .message img{
@@ -375,15 +377,12 @@ li a:hover{
 }
 
 
-
-
-
-
-
-
 .viewall{
 	float: right;
-	padding-right: 200px;
+	margin-right: 130px;
+	padding: 8px 35px 8px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    border-radius: 20px;
 }
 
 .clearfix::after {
@@ -394,6 +393,8 @@ li a:hover{
 
 .crosstalk{
 	display: block;
+	position: relative;
+	z-index: 1;
 }
 
 .crosstalk h3{
@@ -404,7 +405,13 @@ li a:hover{
 .project{
 	height: cover;
 	padding: 30px 0;
+	display: block;
+	position: relative;
+	z-index: 1;
+	background-color:#fff1;
+
 }
+
 
 .project h3{
 	margin: 50px 0 0 200px;
@@ -415,6 +422,7 @@ li a:hover{
 	margin-left:200px;
 	font-size: 20px;
 }
+
 
 .re-image>p{
 	display: inline-block;
@@ -508,9 +516,6 @@ footer p{
 	border: solid 1px #000;
 }
 
-.section-inner0{
-}
-
 .profession-container{
 	padding: 40px 40px 50px 40px;
 	margin-bottom: 20px;
@@ -538,10 +543,6 @@ footer p{
     color: #fff;
 	overflow: hidden;
 	display: inline-block;
-}
-
-.entry-btn a{
-	float: right;
 }
 
 .internship{
@@ -578,6 +579,12 @@ footer p{
 		height: cover;
 }
 
+.member{
+	position: relative;
+	z-index: 1;
+	display: block;
+}
+
 .member-index{
 	margin: 30px 0;
 }
@@ -605,4 +612,106 @@ footer p{
 
 .cover{
 	height: 600px;
+}
+
+.project-title{
+	position: relative;
+	width: 100%;
+	padding: 100px 0 50px 0;
+	margin-left: 300px;
+}
+
+.project-title h1{
+	font-size: 40px;
+	font-weight: 700px;
+}
+
+.project-title h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.work-p{
+	background-color: #f5f5f5;
+	height: cover;
+	text-align: center;
+}
+
+.work-p  h3{
+	padding: 30px 0;
+	font-size:1.5em;
+	font-weight: bold;
+}
+
+.work-p p{
+	padding-bottom: 50px;
+}
+
+.story h3{
+	padding: 30px 0;
+	font-size:1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.fw-2 {
+	text-align: center;
+	height: cover;
+}
+
+.fw-2 strong{
+	font-size: 30px;
+	line-height: 2em;
+	padding: 50px 0;
+}
+
+.col-text{
+	display: flex;
+
+}
+
+.col-text p:first-child{
+	margin-right: auto;
+}
+
+.works{
+	height: cover;
+}
+
+.works p{
+	margin-left: 250px;
+	z-index: 1;
+}
+
+.profession-container  {
+    display: flex;
+    flex-direction: column;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.profession .entry-btn {
+	width: 120px;
+	margin-right: auto;
+}
+
+.entry-btn a{
+	margin-top: 50px;
+	margin-left: 200px;
+}
+
+.entry-btn a:hover{
+	background-color: #e51937;
 }

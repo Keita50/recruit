@@ -22,8 +22,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>  
     <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/slick.min.js"></script>
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-   
+   	
+　　　
     <?php wp_head(); ?>
 </head>
 
@@ -33,7 +35,7 @@
 
 		<header class="clearfix">            
 
-                <a class="logo" href=""><i class="fab fa-fedex my" ></i></a>
+                <a class="logo" href="<?php echo get_stylesheet_directory_uri(); ?>/#"><i class="fab fa-fedex my"></i></a>
                 <nav>
                 <ul class="dropdwn">
                     <li>
@@ -45,12 +47,6 @@
                       <li>
                         <a href="<?php echo get_stylesheet_directory_uri(); ?>/philosophy">PHYLOSOPHY</a>
                       </li>
-                      <li>
-                        <a href="#">子ナビ1</a>
-                      </li>
-                      <li>
-                        <a href="#">子ナビ1</a>
-                      </li>
                     </ul>
                     </li>
                     <li>
@@ -60,10 +56,10 @@
                     <span>ブレインパッドについて</span>
                     <ul class="secondary_nav">
                       <li>
-                        <a href="#">子ナビ1</a>
+                        <a href="#">dummy</a>
                       </li>
                       <li>
-                        <a href="#">子ナビ1</a>
+                        <a href="#">dummy</a>
                       </li>
                     </ul>
 
@@ -84,10 +80,7 @@
                     <span>プロジェクト</span>
                     <ul class="secondary_nav">
                       <li>
-                        <a href="#">子ナビ1</a>
-                      </li>
-                      <li>
-                        <a href="#">子ナビ1</a>
+                        <a href="<?php echo get_stylesheet_directory_uri(); ?>/project1">Project1</a>
                       </li>
                     </ul>
 
@@ -99,13 +92,7 @@
                     <span>クロストーク</span>
                     <ul class="secondary_nav">
                       <li>
-                        <a href="#">子ナビ1</a>
-                      </li>
-                      <li>
-                        <a href="#">子ナビ1</a>
-                      </li>
-                      <li>
-                        <a href="#">子ナビ1</a>
+                        <a href="#">dummy</a>
                       </li>
                     </ul>
 

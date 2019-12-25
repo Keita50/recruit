@@ -6,14 +6,14 @@
         </nav>
         <div class="recruit-site clearfix">
             <div class="a">
-            <a href="">GRADUATE
+            <a href="<?php echo get_stylesheet_directory_uri(); ?>/graduate">GRADUATE
             </br>
             新卒採用
             </a>
 
             </div>
             <div class="b">
-            <a href="">CAREER</br>
+            <a href="<?php echo get_stylesheet_directory_uri(); ?>/carrer">CAREER</br>
             中途採用</a>
 
             </div>
@@ -32,4 +32,5 @@
 </footer>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/script.js"></script>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/slider.js"></script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/fadein.js"></script>
 </body>

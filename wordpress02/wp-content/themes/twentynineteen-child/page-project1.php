@@ -8,16 +8,15 @@ get_header();
 
 <body>
     <section>
-        <div　class="project-title">
-            <h2>PROJECT</h2>
-            <span>01</span>
-            <h1>この文章はダミーです。<br>
+        <div class="project-title">
+            <h2>PROJECT<br>01</h2>
+            <h3>この文章はダミーです。<br>
             文字の大きさ、量、字間、行間等を<br>
-            確認するために入れています。</h1>
+            確認するために入れています。</h3>
         </div>
     </section>    
     <section>
-        <div class="section-inner">
+        <div class="work-p">
             <h3>Work</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br>
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
@@ -115,7 +114,7 @@ get_header();
         </div>
     </section>
     <section>
-        <div>
+        <div class="story">
             <h3>Story</h3>
             <div class="title-cf">
                 <h2 class="fw-2">
@@ -152,30 +151,7 @@ get_header();
             </div>
         </div>
     </section>
-    <section class="other-project">
-        <div class="section-inner">
-            <h3>Other Project</h3>
-            <ul class="cf">
-                <li>
-                    <a href=""></a>
-                    <img src="" alt="">
-                    <p>dummy<br>
-                        dummy<br>
-                        dummy
-                    </p>
-                </li>
-                <li>
-                    <a href=""></a>
-                    <img src="" alt="">
-                    <p>dummy<br>
-                        dummy<br>
-                        dummy
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="recruit">
+   <section class="recruit">
         <h2>RECRUIT</h2>
         <h3>採用情報</h3>
         <div class="re-image0">

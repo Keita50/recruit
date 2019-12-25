@@ -8,13 +8,12 @@ get_header();
 
 <body>
     <section>
-        <div class="">
+        <div class="page-title">
             <h2>Phylosophy</h2>
-            <p>新卒採用</p>
         </div>
     </section>    
     <section>
-        <div class="missino">
+        <div class="mission">
             <h3>Mission</h3>
             <p>使命</p>
             <p class="explanation">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>

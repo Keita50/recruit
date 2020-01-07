@@ -53,13 +53,11 @@ if ( $wp_query->have_posts() ) {
 			$image .= '<div class="work"><div class="works">' . get_the_post_thumbnail() . '<p>JOB :' . get_field('job')  . '</p><br><p>NAME :' . get_field('name') . '</p><br><p>JOINED :' . get_field('joined') .'</p></div></div>';
 		}else{
 			$image .= '<div class="work"><div class="js-modal-open" data-modal="' . get_post_field( 'post_name', get_the_ID() ) . '"><div class="img"><img src="./wp-content/themes/twentynineteen_child/images/no-image.png"></div></div></div>';
-		};
-		$str .= '<p>JOB :' . get_field('job')  .'</p><br>' .'<p>NAME :' . get_field('name').'</p><br>' . '<p>JOINED :' . get_field('joined') .'</p><br>'  ; 
-		
+		};		
 }			
 // 投稿データのリセット</p>
 wp_reset_postdata();
-	return  $image   ;
+	return  '<div class="slider">' . $image .'</div>'  ;
 }}
 
 function get_recruit() {
@@ -81,7 +79,7 @@ if ( $wp_query->have_posts() ) {
         $wp_query->the_post();
         // 処理を記述
 			if(has_post_thumbnail()){
-			$image .= '<div class="re-image0">' .get_the_post_thumbnail() .'</div>' .'<h3>' . get_field('recruit_gate') .'</h3>';
+			$image .= '<div class="re-image0"><a href='. get_field('recruit_url')  .get_the_post_thumbnail() . '</a>'  .'<div class = "recruit-description"><h3>' . get_field('recruit_gate') .'</h3></div></div>';
 		}else{
 			$image .= '<div class="work"><div class="js-modal-open" data-modal="' . get_post_field( 'post_name', get_the_ID() ) . '"><div class="img"><img src="./wp-content/themes/twentynineteen_child/images/no-image.png"></div></div></div>';
 		};

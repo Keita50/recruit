@@ -1,10 +1,10 @@
 <footer>
     <div class="footer-top clearfix">
-        <nav class="ft clearfix">
+        <div class="ft clearfix">
         <a href="https://www.facebook.com/brainpadrecruit/"><i class="fab fa-facebook fa-2x"></i></a>
         <a href="https://twitter.com/brainpad_pr"><i class="fab fa-twitter-square fa-2x"></i></a>
         </nav>
-        <div class="recruit-site clearfix">
+        <div class="recruit-site-footer clearfix">
             <div class="a">
             <a href="<?php echo get_stylesheet_directory_uri(); ?>/graduate">GRADUATE
             </br>
@@ -18,13 +18,13 @@
 
             </div>
         </div>
-
+		</div>
     </div>
     <div class="footer-bottom">
     <ul class="foot-ul clearfix">
-        <li><a href="">会社概要</a></li>
-        <li><a href="">個人情報保護方針</a></li>
-        <li><a href="">個人情報の取り扱いについて</a></li>
+        <li><a href="">会社概要</a></li><br>
+        <li><a href="">個人情報保護方針</a></li><br>
+        <li><a href="">個人情報の取り扱いについて</a></li><br>
         <li><a href="">お問い合わせ</a></li>
     </ul>
     </div>

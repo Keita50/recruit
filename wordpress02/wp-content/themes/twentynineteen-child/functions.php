@@ -24,7 +24,7 @@ $wp_query = new WP_Query( $args );
 if ( $wp_query->have_posts() ) {
 while ( $wp_query->have_posts() ) {
   $wp_query->the_post();
-	 	$information .= '<div>' . get_the_title()  . get_the_time("Y年n月j日")  .'<br></div>' ;
+	 	$information .= '<div class="info-contents"><span>' . get_the_time("Y年n月j日") . '</span><a>' . get_the_title()  .'<br></a></div>' ;
 }
 }
 wp_reset_postdata();
@@ -50,14 +50,14 @@ if ( $wp_query->have_posts() ) {
         $wp_query->the_post();
         // 処理を記述
 			if(has_post_thumbnail()){
-			$image .= '<div class="work"><div class="works">' . get_the_post_thumbnail() . '<p>JOB :' . get_field('job')  . '</p><br><p>NAME :' . get_field('name') . '</p><br><p>JOINED :' . get_field('joined') .'</p></div></div>';
+			$image .= '<div class="work"><div class="works"><li><a href="#">' . get_the_post_thumbnail() . '<p>JOB :' . get_field('job')  . '</p><br><p>NAME :' . get_field('name') . '</p><br><p>JOINED :' . get_field('joined') .'</p></a></li></div></div>';
 		}else{
 			$image .= '<div class="work"><div class="js-modal-open" data-modal="' . get_post_field( 'post_name', get_the_ID() ) . '"><div class="img"><img src="./wp-content/themes/twentynineteen_child/images/no-image.png"></div></div></div>';
 		};		
 }			
 // 投稿データのリセット</p>
 wp_reset_postdata();
-	return  '<div class="slider">' . $image .'</div>'  ;
+	return  $image   ;
 }}
 
 function get_recruit() {
@@ -79,7 +79,7 @@ if ( $wp_query->have_posts() ) {
         $wp_query->the_post();
         // 処理を記述
 			if(has_post_thumbnail()){
-			$image .= '<div class="re-image0"><a href='. get_field('recruit_url')  .get_the_post_thumbnail() . '</a>'  .'<div class = "recruit-description"><h3>' . get_field('recruit_gate') .'</h3></div></div>';
+			$image .= '<div class="re-image1"><a href='. get_field("recruit_url") .'>'  .get_the_post_thumbnail() . '</a>'  .'<div class = "recruit-description"><h3>' . get_field('recruit_gate') .'</h3></div></div>';
 		}else{
 			$image .= '<div class="work"><div class="js-modal-open" data-modal="' . get_post_field( 'post_name', get_the_ID() ) . '"><div class="img"><img src="./wp-content/themes/twentynineteen_child/images/no-image.png"></div></div></div>';
 		};
@@ -87,7 +87,7 @@ if ( $wp_query->have_posts() ) {
 }			
 // 投稿データのリセット
 wp_reset_postdata();
-	return  '<div class="re-image0">' . $image . '</div>';
+	return   $image ;
 }}
 
 function get_crosstalk() {
@@ -110,7 +110,7 @@ if ( $wp_query->have_posts() ) {
         $wp_query->the_post();
         // 処理を記述
 			if(has_post_thumbnail()){
-			$image .= '<div class="re-image0">'. get_the_post_thumbnail() .'<p>' . get_field('crosstalk_name') .'</p></div>' ;
+			$image .= '<div class="re-image1"><div class="re-image2"><a href='. get_field("crosstalk_url") .'>'  .get_the_post_thumbnail() . '</a></div><p>' . get_field('crosstalk_name') .'</p></div>' ;	
 		}else{
 			$image .= '<div class="work"><div class="js-modal-open" data-modal="' . get_post_field( 'post_name', get_the_ID() ) . '"><div class="img"><img src="./wp-content/themes/twentynineteen_child/images/no-image.png"></div></div></div>';
 		};
@@ -139,7 +139,7 @@ if ( $wp_query->have_posts() ) {
         $wp_query->the_post();
         // 処理を記述
 			if(has_post_thumbnail()){
-			$image .= '<div class="re-image0">'.  get_the_post_thumbnail() .'<p>' . get_field('project_name') .'</p></div>' ;
+			$image .= '<div class="re-image1"><div class="re-image2"><a href='. get_field("project_url") .'>'  .get_the_post_thumbnail() . '</a></div><p>' . get_field('project_name') .'</p></div>' ;
 		}else{
 			$image .= '<div class="re-image">' . get_post_field( 'post_name', get_the_ID() ) . '"><div class="img"><img src="./wp-content/themes/twentynineteen_child/images/no-image.png"></div></div>';
 		}

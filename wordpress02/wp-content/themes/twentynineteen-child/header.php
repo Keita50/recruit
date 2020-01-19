@@ -33,10 +33,16 @@
 <div id="page" class="site">
 
 		<header class="clearfix">            
+					<nav>	
+                <a class="logo" href="http://portfolio.frenchkiss.jp/recruit/"><i class="fab fa-fedex my"></i></a>
 
-                <a class="logo" href="<?php echo get_stylesheet_directory_uri(); ?>/#"><i class="fab fa-fedex my"></i></a>
-                <nav>
-                <ul class="dropdwn">
+						<div class="nav">
+						<input id="nav-input" type="checkbox" class="nav-unshown">
+						<label id="nav-open" for="nav-input"><span><i class="fas fa-bars nav-unshown"></i></span></label>
+				      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+						</div>
+
+                <ul class="dropdwn " id="nav-content">
                     <li>
                     <span>PHILOSOPHY
                     <i class="fas fa-check"></i>
@@ -98,7 +104,6 @@
                     </li>
 
                 </ul>
-            </nav>
         <div class="recruit-site">
             <div class="a">
             <a href="<?php echo get_stylesheet_directory_uri(); ?>/graduate">GRADUATE
@@ -113,5 +118,7 @@
 
             </div>
         </div>
+			</nav>			            
+			
         <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/script.js"></script>
 		</header><!-- #masthead -->

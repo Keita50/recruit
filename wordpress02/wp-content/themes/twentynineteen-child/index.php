@@ -36,8 +36,10 @@ get_header();
         </div>
     </section>
     <section class="message">
-    <img src="./wp-content/themes/twentynineteen-child/img/book01.jpeg" alt="">
-
+		<div class="me">
+		<div class="message-img">
+	    <img src="./wp-content/themes/twentynineteen-child/img/book01.jpeg" alt="">			
+		</div>
         <div class="text-container">
             <b>messege</b>
             <h3>この文章はダミーです。</h3>
@@ -49,6 +51,8 @@ get_header();
                 あやしうこそものぐるほしけれ。（Wikipediaより）</p>
             <a href=""><span>View Our Phylosophy</span></a>
         </div>
+
+		</div>
     </section>
     <section>
         <div class="news-archive">
@@ -56,21 +60,17 @@ get_header();
                 <h2><span>Information</span></h2>
                 <p>お知らせ</p>
             </div>
-
             <?php echo get_works(); ?>
         </div>
     </section>
-    <section>
+    <section class="informations">
         <div class="section-inner clearfix">
             <h2>Menber</h2>
             <h3>社員インタビュー</h3>
         </div>
         <div class="member">
             <ul class="slider">
-                <li><a href="#"><?php echo get_member(); ?></a></li>
-                <li><a href="#"><?php echo get_member(); ?></a></li>
-                <li><a href="#"><?php echo get_member(); ?></a></li>
-                <li><a href="#"><?php echo get_member(); ?></a></li>
+                <?php echo get_member(); ?>
             </ul>
         </div>
         <div class="viewall">
@@ -78,19 +78,20 @@ get_header();
         </div>
     </section>
     <section class="cross">
-    <div class="crosstalk">
-        <h3>Cross Talk</h3>
-        <div class="re-image">
-        <?php echo get_crosstalk(); ?>
-        </div>
-    </div>
+			<div class="crosstalk">
+				<h3>Cross Talk</h3>
+				<div class="re-image0">
+						<?php echo get_crosstalk(); ?>
+				</div>
+			</div>
     </section>
     <section class="project">
-        <h3>Project</h3>
+		<div class="project-name">
+		  <h3>Project</h3>
         <p>プロジェクト</p>
-        <div class="re-image">
+		</div>
+        <div class="re-image0">
         <?php echo get_project(); ?>
-
         </div>
     </section>
 <?php
